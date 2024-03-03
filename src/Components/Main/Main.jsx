@@ -1,15 +1,23 @@
-/* eslint-disable react-hooks/rules-of-hooks */
-
+import React, { useState } from "react";
 import photo from "./photo.jpg";
 import "./Main.css";
-import { useState } from "react";
 import Button from "../Button/Button";
 import Modal from "../Modal/Modal";
+
 export default function Main() {
-  const [modalIsOpen, useModal] = useState(false);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
   return (
     <main>
-      <Modal isActive={modalIsOpen} useFunc={useModal}>
+      <Modal isActive={modalIsOpen} closeFunc={closeModal}>
         100000%
         <br />
         Точно-точно!
@@ -33,7 +41,7 @@ export default function Main() {
           <li>Она та, кто Делает меня счатливым</li>
           <li>Просто посмотрите на её улбыку, это же...</li>
         </ol>
-        <Button onClick={() => useModal(true)}>Узнать правда ли</Button>
+        <Button onClick={openModal}>Узнать правда ли</Button>
       </section>
     </main>
   );

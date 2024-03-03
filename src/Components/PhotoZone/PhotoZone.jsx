@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState } from "react";
 import "./PhotoZone.css";
 import photo1 from "./photo.jpg";

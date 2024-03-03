@@ -9,6 +9,11 @@ export default function LuckyWell() {
   const [isSpinning, setIsSpinning] = useState(false);
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [modalText, setmodalText] = useState("Вы выиграли обнимашки и целовашки :3");
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
   const handleSpin = () => {
     if (!isSpinning) {
       setIsSpinning(true);
@@ -25,7 +30,7 @@ export default function LuckyWell() {
 
   return (
     <section className="luckyWellSection">
-      <Modal isActive={modalIsOpen} useFunc={setModalIsOpen}>
+      <Modal isActive={modalIsOpen} closeFunc={closeModal}>
         {modalText}
       </Modal>
       <div className="roullete">

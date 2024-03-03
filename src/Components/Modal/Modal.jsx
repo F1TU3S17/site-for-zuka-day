@@ -1,8 +1,7 @@
 import React, { useRef, useEffect } from "react";
-import Button from "../Button/Button";
 import "./Modal.css";
 
-export default function Modal({ isActive, children, useFunc }) {
+export default function Modal({ isActive, children, closeFunc}) {
   const dialogRef = useRef(null);
 
   useEffect(() => {
@@ -17,7 +16,7 @@ export default function Modal({ isActive, children, useFunc }) {
   }, [isActive]);
 
   return (
-    <dialog ref={dialogRef} className="modal"><button className="closeModal" onClick={() => useFunc(false)}>
+    <dialog ref={dialogRef} className="modal"><button className="closeModal" onClick={closeFunc}>
           X
         </button>
       <div className="modalContent">
