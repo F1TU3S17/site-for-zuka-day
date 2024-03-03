@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState } from "react";
 import "./PhotoZone.css";
-import photo1 from "./photo.jpg";
-import photo2 from "./photo2.jpg";
+import photo1 from "./photo2.jpg";
+import photo2 from "./photo.jpg";
 import photo3 from "./photo3.jpg";
 import photo4 from "./photo4.jpg";
 import photo5 from "./photo5.jpg";
@@ -15,6 +15,15 @@ import photo11 from "./photo11.jpg";
 import photo12 from "./photo12.jpg";
 import photo13 from "./photo13.jpg";
 import photo14 from "./photo14.jpg";
+import photo15 from "./photo15.jpg";
+import photo16 from "./photo16.jpg";
+import photo17 from "./photo17.jpg";
+import photo18 from "./photo18.jpg";
+import photo19 from "./photo19.jpg";
+import photo20 from "./photo20.jpg";
+import photo21 from "./photo21.jpg";
+import photo22 from "./photo22.jpg";
+import photo23 from "./photo23.jpg";
 import camera from "./camera.png";
 
 export default function PhotoZone() {
@@ -34,6 +43,15 @@ export default function PhotoZone() {
     photo12,
     photo13,
     photo14,
+    photo15,
+    photo16,
+    photo17,
+    photo18,
+    photo19,
+    photo20,
+    photo21,
+    photo22,
+    photo23
   ];
 
   const nextPhoto = () => {
