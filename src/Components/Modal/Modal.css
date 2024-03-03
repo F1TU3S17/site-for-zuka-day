@@ -1,0 +1,18 @@
+dialog{
+    width: 400px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    z-index: 100;
+}
+.modalContent{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.closeModal{
+    float: right;
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+}

@@ -1,0 +1,28 @@
+header{
+    background-color: #F3339B;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid pink;
+    
+}
+.logo{
+    position: absolute;
+    left: 0;
+    width: 80px;
+}
+
+@keyframes anim {
+    50%{
+        transform:rotate(1turn) ;
+        
+    }
+    100%{
+        transform:scale(1.1) ;
+    }
+
+}
+.logo:hover{
+    cursor: pointer;
+    animation: anim 1s ease-in-out;
+}

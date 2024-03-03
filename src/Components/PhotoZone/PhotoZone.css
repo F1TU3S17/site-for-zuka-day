@@ -1,0 +1,74 @@
+
+.camera {
+    position: relative; /* Это позволит абсолютно спозиционированным элементам располагаться относительно этого элемента */
+    display: inline-block; /* Устанавливаем display: inline-block, чтобы родительский элемент занимал минимально необходимое место */
+    width: 100%; /* Устанавливаем ширину родительского элемента */
+  }
+  
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 71%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 40px; 
+    height: 40px;
+    
+  }
+  
+  .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 40px; 
+    height: 40px; 
+  }
+  
+  /* Медиазапрос для экранов меньше 400px */
+  @media (max-width: 600px) {
+    .next, .prev {
+      width: 10px; /* Например, 80px */
+      height: 10px; /* Например, 80px */
+    }   
+  }
+  
+  .cameraImg {
+    position: relative; 
+    z-index: 0; 
+    width: 100%;
+    height: auto; 
+  }
+  
+  .photoContainer { 
+    position: absolute;
+    top: 30.75%;
+    left: 22.60%;
+    width: 35%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    border-radius: 10px; /* Примерное значение радиуса скругления */
+    background: white;
+    overflow: hidden; /* Чтобы скрыть переполнение скругленных углов */
+  }
+  
+  .photoContainer img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 20px/50px;
+    z-index: 3;
+  }
+  
+  @media (max-width: 120px) {
+    .photoContainer img {
+        width: 100%;
+        max-height: 100%;
+    }
+  }

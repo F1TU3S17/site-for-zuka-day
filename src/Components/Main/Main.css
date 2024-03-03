@@ -1,0 +1,22 @@
+.mainTitleText{
+    text-align: center;
+    color: white;
+}
+.mainPhotoSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    margin-right: 20%;
+    margin-left: 20%;
+    border: 4px solid #F3339B;
+    border-radius: 30%;
+}
+.bestGirl{
+    margin-top: 5%;
+    width: 60%;
+}
+.cuteText{
+    margin: 20px;
+}
