@@ -1,0 +1,37 @@
+.luckyWellSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.roullete {
+  display: block;
+  position: relative; /* Позиционирование внутри контейнера */
+}
+
+.baraban {
+  max-width: 100%;
+  margin: 10px;
+  transition: all 3s;
+}
+.baraban.spin {
+  transform: rotate(0.55turn);
+}
+.arrow {
+  width: 20%;
+  position: absolute; /* Абсолютное позиционирование для центрирования */
+  top: 43%;
+  left: 60%;
+  transform: translate(-50%, -50%); /* Центрирование стрелки */
+}
+
+/*
+.goWell{
+    margin: 10px;
+    transition: all 3s;
+}
+.goWell:hover{
+    transform: scaleY(-20px);
+}
+*/

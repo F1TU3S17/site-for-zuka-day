@@ -1,4 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
+
 import photo from "./photo.jpg";
 import "./Main.css";
 import { useState } from "react";
